@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5D9A351A-F26B-44FA-9626-3B66A39C9633"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A9A821C-8850-428A-8136-DA34641CAD1F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryViewUI/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "descriptionTextView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1A9A821C-8850-428A-8136-DA34641CAD1F - f013719895c81697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UITextView in variable initialization expression of StoryViewUI.ViewController.descriptionTextView : __C.UITextView"
+                  moduleName = "StoryViewUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/iOS/StoryViewUI/StoryViewUI/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "1A9A821C-8850-428A-8136-DA34641CAD1F - 725806a413346d8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryViewUI.ViewController.descriptionTextView.getter : __C.UITextView"
+                  moduleName = "StoryViewUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/iOS/StoryViewUI/StoryViewUI/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "1A9A821C-8850-428A-8136-DA34641CAD1F - 68c39cadb0ac819d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryViewUI.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoryViewUI.ViewController"
+                  moduleName = "StoryViewUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/iOS/StoryViewUI/StoryViewUI/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "1A9A821C-8850-428A-8136-DA34641CAD1F - 72378933d5908b9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryViewUI.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoryViewUI.ViewController&gt;"
+                  moduleName = "StoryViewUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/iOS/StoryViewUI/StoryViewUI/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

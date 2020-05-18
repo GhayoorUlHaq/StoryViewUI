@@ -9,8 +9,29 @@
 import UIKit
 class PageCell: UICollectionViewCell {
     
-    // lets avoid polluting view did load
-    let bearImgeView: UIImageView = {
+    var page: Page? {
+        // if page is set then call this
+        didSet {
+            
+//            to gard the optional ones
+            guard page != nil else {
+                return
+            }
+            
+            bearImgeView.image = UIImage(named: page!.imageName)
+            
+            let attributedText = NSMutableAttributedString(string: page!.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+
+            let anotherattributedText = NSMutableAttributedString(string: "\n\n\(page!.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray])
+            
+            attributedText.append(anotherattributedText)
+            
+            descriptionTextView.attributedText = attributedText
+            descriptionTextView.textAlignment = .center
+        }
+    }
+    
+    private let bearImgeView: UIImageView = {
         let imageView = UIImageView(image:#imageLiteral(resourceName: "bear_first"))
         
         // enable autolayout to add custom constraits
@@ -19,16 +40,8 @@ class PageCell: UICollectionViewCell {
         return imageView
     }()
     
-    let descriptionTextView: UITextView = {
-      let textView = UITextView()
-        let attributedText = NSMutableAttributedString(string: "Join us today in out fun and games!", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
-
-        let anotherattributedText = NSMutableAttributedString(string: "\n\n\nAre you ready for loads and loads of fun! Don't wait any longer! We hope to see you in our stores soon!", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray])
-        
-        attributedText.append(anotherattributedText)
-        textView.attributedText = attributedText
-
-        
+    private let descriptionTextView: UITextView = {
+      let textView = UITextView()        
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .center
         textView.isEditable = false
@@ -46,6 +59,10 @@ class PageCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+//MARK: - Setup Layout
+extension PageCell {
     private func setupLayout() {
         let topImageContainerView = UIView()
         addSubview(topImageContainerView)
@@ -69,5 +86,4 @@ class PageCell: UICollectionViewCell {
         descriptionTextView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
         
     }
-    
 }

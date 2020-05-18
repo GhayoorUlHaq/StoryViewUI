@@ -68,9 +68,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(descriptionTextView)
-    
-        setupLayout()
-        setupButtonController()
+            setupButtonController()
         
         
     }
@@ -93,29 +91,7 @@ class ViewController: UIViewController {
         ])
     }
     
-    private func setupLayout() {
-        let topImageContainerView = UIView()
-        view.addSubview(topImageContainerView)
 
-        topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
-        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
-        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        
-        topImageContainerView.addSubview(bearImgeView)
-        bearImgeView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
-        bearImgeView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
-        bearImgeView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        bearImgeView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.5).isActive = true
-        
-        
-        descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
-        descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
-        descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
-        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        
-    }
 
 
 }

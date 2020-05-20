@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045BFC1224720FC900BEA7B7 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BFC1124720FC900BEA7B7 /* SwipingController.swift */; };
+		04A5705D2472F9530038AD00 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5705C2472F9530038AD00 /* PageCell.swift */; };
+		04A570612473033B0038AD00 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A570602473033B0038AD00 /* Page.swift */; };
 		04B0D39A24718BBA009F245B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D39924718BBA009F245B /* AppDelegate.swift */; };
 		04B0D39C24718BBA009F245B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D39B24718BBA009F245B /* SceneDelegate.swift */; };
 		04B0D39E24718BBA009F245B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D39D24718BBA009F245B /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045BFC1124720FC900BEA7B7 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		04A5705C2472F9530038AD00 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		04A570602473033B0038AD00 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		04B0D39624718BBA009F245B /* StoryViewUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryViewUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B0D39924718BBA009F245B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B0D39B24718BBA009F245B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A57062247317940038AD00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D39F24718BBA009F245B /* Main.storyboard */,
+				04B0D3A424718BBC009F245B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04A57063247317BA0038AD00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04A570602473033B0038AD00 /* Page.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04A57064247317E20038AD00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D39D24718BBA009F245B /* ViewController.swift */,
+				045BFC1124720FC900BEA7B7 /* SwipingController.swift */,
+				04A5705C2472F9530038AD00 /* PageCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		04B0D38D24718BBA009F245B = {
 			isa = PBXGroup;
 			children = (
+				04A57064247317E20038AD00 /* Controllers */,
+				04A57063247317BA0038AD00 /* Models */,
+				04A57062247317940038AD00 /* Views */,
 				04B0D39824718BBA009F245B /* StoryViewUI */,
 				04B0D39724718BBA009F245B /* Products */,
 			);
@@ -58,10 +94,7 @@
 			children = (
 				04B0D39924718BBA009F245B /* AppDelegate.swift */,
 				04B0D39B24718BBA009F245B /* SceneDelegate.swift */,
-				04B0D39D24718BBA009F245B /* ViewController.swift */,
-				04B0D39F24718BBA009F245B /* Main.storyboard */,
 				04B0D3A224718BBC009F245B /* Assets.xcassets */,
-				04B0D3A424718BBC009F245B /* LaunchScreen.storyboard */,
 				04B0D3A724718BBC009F245B /* Info.plist */,
 			);
 			path = StoryViewUI;
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B0D39E24718BBA009F245B /* ViewController.swift in Sources */,
+				04A5705D2472F9530038AD00 /* PageCell.swift in Sources */,
+				04A570612473033B0038AD00 /* Page.swift in Sources */,
 				04B0D39A24718BBA009F245B /* AppDelegate.swift in Sources */,
 				04B0D39C24718BBA009F245B /* SceneDelegate.swift in Sources */,
+				045BFC1224720FC900BEA7B7 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
